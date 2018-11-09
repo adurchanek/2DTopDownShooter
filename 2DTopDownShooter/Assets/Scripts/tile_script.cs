@@ -14,6 +14,10 @@ public class tile_script : MonoBehaviour {
         {
             turret = Instantiate(turretPrefab, transform);
         }
+        else
+        {
+            Destroy(turret);
+        }
         Debug.Log("Works");
 	}
 
